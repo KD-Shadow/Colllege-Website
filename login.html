@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial scale=1.0">
+    <title>University Website design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/eff06bc9da.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="login-box">
+            <div class="button-boxx">
+                <div class="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="so-icons">
+                <img src="login/fb.png">
+                <img src="login/tw.png">
+                <img src="login/gp.png">
+            </div>
+            <form id="login" action="" class="input-group">
+                <input type="text" class="input-field" placeholder="User-Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                <Button type="submit" class="submit-btn">Login</Button>
+            </form>
+            <form id="register" action="" class="input-group">
+                <input type="text" class="input-field" placeholder="User-Id" required>
+                <input type="email" class="input-field" placeholder="Email-Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox"><span>I agree to terms & condition.</span>
+                <Button type="submit" class="submit-btn">Register</Button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+</body>
+
+</html>
